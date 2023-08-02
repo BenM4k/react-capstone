@@ -8,12 +8,12 @@ const DataList = () => {
   const searchedData = data?.filter(
     (data) => data.name.toLowerCase().includes(query.toLowerCase()),
   );
-  const filteredData = searchedData?.filter((data) => data.name.includes(filter));
+  const filteredData = filter === '0' ? searchedData : searchedData?.filter((data) => data.aqi === parseInt(filter, 10));
   return (
     <>
       <div className="banner">
         <h1>
-          Air Pollution
+          Air Quality
           <br />
           Index
         </h1>
@@ -37,7 +37,7 @@ const DataList = () => {
             <NavLink to={`/data/${data.id}`}>
               <h3>{data.sigle}</h3>
               <p>{data.name.split('_').join(' ')}</p>
-              <span>1</span>
+              <span>{data.aqi}</span>
             </NavLink>
           </li>
         ))}
