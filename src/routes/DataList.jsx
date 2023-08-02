@@ -6,9 +6,9 @@ const DataList = () => {
   const { query, filter } = useSelector((store) => store.search);
   const { cities: data } = useSelector((store) => store.data);
   const searchedData = data?.filter(
-    (data) => data.name.toLowerCase().includes(query.toLowerCase()),
+    (data) => data?.name.toLowerCase().includes(query.toLowerCase()),
   );
-  const filteredData = filter === '0' ? searchedData : searchedData?.filter((data) => data.aqi === parseInt(filter, 10));
+  const filteredData = filter === '0' ? searchedData : searchedData?.filter((data) => data?.aqi === parseInt(filter, 10));
   return (
     <>
       <div className="banner">
@@ -33,11 +33,11 @@ const DataList = () => {
       </div>
       <ul className="cities-list">
         {filteredData?.map((data) => (
-          <li key={data.id} className="city">
+          <li key={data?.id} className="city">
             <NavLink to={`/data/${data.id}`}>
-              <h3>{data.sigle}</h3>
-              <p>{data.name.split('_').join(' ')}</p>
-              <span>{data.aqi}</span>
+              <h3>{data?.sigle}</h3>
+              <p>{data?.name.split('_').join(' ')}</p>
+              <span>{data?.aqi}</span>
             </NavLink>
           </li>
         ))}
