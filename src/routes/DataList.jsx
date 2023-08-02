@@ -6,7 +6,7 @@ const DataList = () => {
   const { query, filter } = useSelector((store) => store.search);
   const { cities: data } = useSelector((store) => store.data);
   const searchedData = data?.filter(
-    (data) => data?.name.toLowerCase().includes(query.toLowerCase()),
+    (data) => data?.name?.toLowerCase().includes(query?.toLowerCase()),
   );
   const filteredData = filter === '0' ? searchedData : searchedData?.filter((data) => data?.aqi === parseInt(filter, 10));
   return (
