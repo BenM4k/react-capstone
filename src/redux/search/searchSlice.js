@@ -4,7 +4,7 @@ const searchSlice = createSlice({
   name: 'search',
   initialState: {
     query: '',
-    filter: '',
+    filter: '0',
   },
   reducers: {
     updateQuery: (state, action) => {
