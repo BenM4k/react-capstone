@@ -1,17 +1,17 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { fetchCitiesData } from './redux/data/dataSlice';
-import cityNames from './utils/cityNames';
+// import { useDispatch } from 'react-redux';
+// import { fetchCitiesData } from './redux/data/dataSlice';
+// import cityNames from './utils/cityNames';
 import Layout from './components/Layout';
 import DataList from './routes/DataList';
 import DataDetail from './routes/DataDetail';
 
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchCitiesData(cityNames));
-  });
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(fetchCitiesData(cityNames));
+  // });
 
   return (
     <Routes>

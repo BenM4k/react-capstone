@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,121 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(228, 66, 93);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main {
+  color: #fff;
+}
+
+.banner {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 10px;
+  color: #fff;
+  background-color: rgb(235, 80, 106);
+}
+
+.banner h1 {
+  text-align: end;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  background-color: rgb(235, 80, 106);
+}
+
+.values ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.values ul li {
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.search-bar {
+  display: flex;
+  gap: 15px;
+  padding: 8px 5px;
+}
+
+.search-bar input {
+  flex: 2;
+  padding: .6rem;
+  border-radius: 10px;
+  border: none;
+  outline: rgb(228, 66, 93);
+}
+
+.search-bar select {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  outline: rgb(228, 66, 93);
+}
+
+.cities-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+}
+
+.city a {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  padding-right: 10px;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.city a h3 {
+  font-size: 2.5rem;
+}
+
+.city:nth-child(4n+2),
+.city:nth-child(4n+3) {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.city-detail {
+  color: #fff;
+  padding: 10px;
+}
+
+.city-detail-top {
+  display: flex;
+  align-items: center;
+}
+
+.city-detail-top p {
+  text-align: center;
+  flex: 1;
+  font-weight: 600;
+  padding-top: 4px;
+}
+.chevron {
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 10px;
 }

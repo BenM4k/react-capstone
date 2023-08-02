@@ -1,6 +1,6 @@
-import { v4 as uuid } from 'uuid';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
+import cityNames from '../../utils/cityNames';
 
 const APP_ID = '54cb10c14297c007dca881e9ae6aa7bd';
 
@@ -8,11 +8,13 @@ export const fetchCitiesData = createAsyncThunk('getCities/GetCitiesData', (city
   const newCitiesData = [];
   const finalCitiesData = [];
   cityNames.map(async (city) => {
-    const URL = `http://api.openwheathermap.org/geo/1.0/direct?q=${city.name.toLowerCase()}&limit=1&appid=${APP_ID}`;
+    const URL = `http://api.openweathermap.org/geo/1.0/direct?q=${city.name.toLowerCase()}&limit=1&appid=54cb10c14297c007dca881e9ae6aa7bd`;
     try {
       const resp = await axios.get(URL);
       console.log(resp.data);
       const newCity = {
+        id: city.id,
+        sigle: city.sigle,
         name: city.name?.split('_').join(' '),
         lon: resp.data?.lon,
         lat: resp.data?.lat,
@@ -30,8 +32,9 @@ export const fetchCitiesData = createAsyncThunk('getCities/GetCitiesData', (city
       const resp = await axios.get(URL);
       console.log(resp?.data);
       const newCity = {
-        id: uuid(),
+        id: city.id,
         name: city.name,
+        sigle: city.sigle,
         aqi: resp.data.list?.main?.aqi,
         co: resp.data.list?.components?.co,
         no: resp.data.list?.components?.no,
@@ -53,48 +56,7 @@ export const fetchCitiesData = createAsyncThunk('getCities/GetCitiesData', (city
 const dataSlice = createSlice({
   name: 'data',
   initialState: {
-    cities: [
-      {
-        id: 'item1',
-        name: 'data 1',
-        desc: 'data description',
-      },
-      {
-        id: 'item2',
-        name: 'data 2',
-        desc: 'data description',
-      },
-      {
-        id: 'item3',
-        name: 'data 3',
-        desc: 'data description',
-      },
-      {
-        id: 'item4',
-        name: 'data 4',
-        desc: 'data description',
-      },
-      {
-        id: 'item44',
-        name: 'data 44',
-        desc: 'data description',
-      },
-      {
-        id: 'item5',
-        name: 'data 5',
-        desc: 'data description',
-      },
-      {
-        id: 'item6',
-        name: 'data 6',
-        desc: 'data description',
-      },
-      {
-        id: 'item7',
-        name: 'data 7',
-        desc: 'data description',
-      },
-    ],
+    cities: cityNames,
     loadCities: false,
     citiesError: false,
   },
