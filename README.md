@@ -53,7 +53,7 @@
 
 <!-- <!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
-- [Live Project Demo](https://benm4k.github.io/KanbanCapstone/) 
+- [Live Project Demo](https://air-quality-732y.onrender.com/) 
 - [Video presentation](https://www.loom.com/share/e690e0295b544f4e81394737f755d620)
 
 
