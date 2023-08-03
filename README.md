@@ -93,6 +93,11 @@ To run the project, execute the following command:
 
 - npm start
 
+### Run tests
+
+To run tests, run the following command:
+
+- npm run test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
