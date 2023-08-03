@@ -145,7 +145,7 @@ Please support this project and be a part of something meaningful and impactful.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success. I want to thank XXX the owner of the design used in this project for his excellent work.
+To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success. I want to thank Nelson Sakwa the owner of the design used in this project for his excellent work.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
