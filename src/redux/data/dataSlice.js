@@ -3,7 +3,7 @@ import axios from 'axios';
 import cityNames from '../../utils/cityNames';
 
 const getDetails = async (city) => {
-  const URL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${city.lat}&lon=${city.lon}&appid=7e3b3a5b2ace534a22e402c3016e2dd6`;
+  const URL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${city.lat}&lon=${city.lon}&appid=7e3b3a5b2ace534a22e402c3016e2dd6`;
   try {
     const resp = await axios.get(URL);
     const newCity = {

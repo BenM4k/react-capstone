@@ -14,7 +14,7 @@ const SearchBar = () => {
     <div className="search-bar">
       <input
         type="search"
-        value={query ? `${query}` : null}
+        value={query ? `${query}` : ''}
         placeholder="Search"
         className="search"
         onChange={handleSearch}

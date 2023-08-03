@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Book Store Project</b></h3>
+  <h3><b>Air Quality Index</b></h3>
 
 </div>
 
@@ -27,15 +27,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Book Store Project <a name="about-project"></a>
+# 📖 Air Quality Index Project <a name="about-project"></a>
 
-**Book Store Project:** is a project  offering a user-friendly platform for storing books, keeping track of the reading progress and allows you to delete a book once your are done. It provides an engaging and interactive experience.
+**Air quality Index Project:** is a project  offering a user-friendly platform that allows you to search the quality of the air in a particular city. You can also filter a group of cities based on their index. It provides an engaging and interactive experience.
 
 ## 🛠 Built With <a name="built-with"></a>
 
   <ul>
     <li>React</li>
-    <li>CSS</li>
+    <li>Redux</li>
     <li>JavaScript</li>
   </ul>
 
@@ -44,19 +44,20 @@
 ### Key Features <a name="key-features"></a>
 
 - [x] **Single Page App**
-- [x] **Items storage**
-- [x] **Medium Fidelity Design**
+- [x] **Items search**
+- [x] **Items filtering**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+## Live demo <a name="live-demo"></a>
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+<!-- <!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
-- [Live Project Demo](https://benm4k.github.io/KanbanCapstone/) -->
+- [Live Project Demo](https://air-quality-732y.onrender.com/) 
+- [Video presentation](https://www.loom.com/share/e690e0295b544f4e81394737f755d620)
 
 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -68,38 +69,37 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-```
-   ssh code:
-   git@github.com:BenM4k/react-bookstore.git
-```
+In order to run this project you need: 
+- GitHub;
+- Code Editor;
+- Basic Knowledge of HTML and CSS;
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+```sh
+  cd my-folder
+  git clone https://github.com/BenM4k/react-group-project.git
 ```
-  cd desired-folder
-  git clone git@github.com:BenM4k/react-bookstore.git
-```
+### Install
 
-### Deployment
+Install this project with:
+- npm install
 
-You can deploy this project using **Github-Pages**. In order to make your project live on Github, you'll want to push your updated repo by using these commands:
+### Usage
 
-```
-git add --all or git add .
+To run the project, execute the following command:
 
-```
+- npm start
 
-```
-git commit -m "your commit message"
+### Run tests
 
-```
+To run tests, run the following command:
 
-```
-git push origin {i.e, your repo name}
+- npx stylelint "**/*.{css,scss}"
+- npx hint .
 
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +145,7 @@ Please support this project and be a part of something meaningful and impactful.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success.
+To all the individuals whose creativity and dedication inspired the codebase, I want to express my heartfelt gratitude. Your tireless efforts have left an indelible mark on this project and your contributions will be remembered for years to come. Thank you for being an integral part of our success. I want to thank Nelson Sakwa the owner of the design used in this project for his excellent work.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

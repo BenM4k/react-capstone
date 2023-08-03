@@ -15,7 +15,7 @@ const DataDetail = () => {
         </NavLink>
         <p>City Details</p>
       </div>
-      <h1>{currentData.name}</h1>
+      <h1>{currentData?.name}</h1>
       <p className="city-air">Air components concentration</p>
       <ul>
         <li>
