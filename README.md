@@ -54,7 +54,7 @@
 <!-- <!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
 - [Live Project Demo](https://benm4k.github.io/KanbanCapstone/) 
-- [Video presentation](https://www.loom.com/share/e690e0295b544f4e81394737f755d620) 
+- [Video presentation](https://www.loom.com/share/e690e0295b544f4e81394737f755d620)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
